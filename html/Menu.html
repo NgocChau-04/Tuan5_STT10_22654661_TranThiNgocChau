@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+                 background-color: #000;
+                 color: #fff;
+                 font-family: Arial, sans-serif;
+             }
+             .navbar {
+                 background-color: transparent;
+             }
+             .navbar-brand {
+                 font-family: 'Great Vibes', cursive;
+                 font-size: 1.5rem;
+             }
+             .nav-link {
+                 color: #fff !important;
+                 margin-right: 1rem;
+             }
+             .btn-order {
+                 background-color: #f0ad4e;
+                 color: #000;
+                 border: none;
+             }
+             .hero-section {
+                 position: relative;
+                 text-align: left;
+                 padding: 100px 50px;
+                 background: url("../img/hero-bg.jpg") no-repeat center center;
+                 background-size: cover;
+             }
+             .hero-section h1 {
+                 font-family: 'Great Vibes', cursive;
+                 font-size: 3rem;
+             }
+             .hero-section p {
+                 font-size: 1rem;
+                 margin: 20px 0;
+             }
+             .hero-section .btn {
+                 background-color: #f0ad4e;
+                 color: #000;
+                 border: none;
+                 padding: 10px 20px;
+                 font-size: 1rem;
+             }
+             .carousel-indicators {
+                 position: absolute;
+                 bottom: 20px;
+                 left: 50px;
+             }
+             .carousel-indicators li {
+                 background-color: #fff;
+             }
+             .menu-section {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .menu-section h2 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .menu-section .btn-group .btn {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            margin: 0 0.5rem;
+        }
+        .menu-section .btn-group .btn.active {
+            background-color: #ffc107;
+            color: #000;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .card-body .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .card-body .cart-icon {
+            background-color: #ffc107;
+            color: #000;
+            border-radius: 50%;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+       </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">
+          Feane
+         </a>
+         <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon">
+          </span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="../html/Home.html">
+                HOME
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="../html/Menu.html">
+                MENU
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="../html/About.html">
+                ABOUT
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="../html/Book.html">
+                BOOK TABLE
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                <i class="fas fa-search">
+                </i>
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                <i class="fas fa-user">
+                </i>
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                <i class="fas fa-shopping-cart">
+                </i>
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="btn btn-order" href="../html/Order.html">
+                Order Online
+               </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+     </nav>
+     <section class="menu-section">
+        <h2>
+         Our Menu
+        </h2>
+        <div aria-label="Menu categories" class="btn-group" role="group">
+         <button class="btn active" type="button">
+          All
+         </button>
+         <button class="btn" type="button">
+          Burger
+         </button>
+         <button class="btn" type="button">
+          Pizza
+         </button>
+         <button class="btn" type="button">
+          Pasta
+         </button>
+         <button class="btn" type="button">
+          Fries
+         </button>
+        </div>
+        <div class="container">
+         <div class="row">
+          <div class="col-md-4">
+           <div class="card">
+            <img alt="Image of a delicious pizza" class="card-img-top" src="../img/f1.png" width="300px" height="200px"/>
+            <div class="card-body">
+             <h5 class="card-title">
+              Delicious Pizza
+             </h5>
+             <p class="card-text">
+              Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+             </p>
+             <div class="d-flex justify-content-between align-items-center">
+              <span class="price">
+               $20
+              </span>
+              <span class="cart-icon">
+               <i class="fas fa-shopping-cart">
+               </i>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4">
+           <div class="card">
+            <img alt="Image of a delicious burger" class="card-img-top" src="../img/f2.png" width="300px" height="200px"/>
+            <div class="card-body">
+             <h5 class="card-title">
+              Delicious Burger
+             </h5>
+             <p class="card-text">
+              Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+             </p>
+             <div class="d-flex justify-content-between align-items-center">
+              <span class="price">
+               $15
+              </span>
+              <span class="cart-icon">
+               <i class="fas fa-shopping-cart">
+               </i>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4">
+           <div class="card">
+            <img alt="Image of a delicious pizza" class="card-img-top" src="../img/f3.png" width="300px" height="200px"/>
+            <div class="card-body">
+             <h5 class="card-title">
+              Delicious Pizza
+             </h5>
+             <p class="card-text">
+              Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+             </p>
+             <div class="d-flex justify-content-between align-items-center">
+              <span class="price">
+               $17
+              </span>
+              <span class="cart-icon">
+               <i class="fas fa-shopping-cart">
+               </i>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+</body>
+</html>
